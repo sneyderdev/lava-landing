@@ -1,8 +1,10 @@
 // Footer
+@use '../base' as *;
+
 .lava-footer {
   height: 900px;
   margin-top: 150px;
-  @include set-background-image('footer-bg.png', center, 100% 100%);
+  @include set-background-image('footer-bg.png', null, cover);
 
   .container {
     height: 100%;
@@ -20,15 +22,15 @@
   &-form {
     padding: 50px;
     text-align: center;
+    border-radius: 5px;
     background: $light-color;
     box-shadow: 0 0 8px $dark-color;
-    border-radius: 5px;
 
     &__field {
       width: 100%;
       padding: 15px 20px;
-      font-family: $primary-font;
       border-radius: 10px;
+      font-family: $primary-font;
 
       &:focus {
         border-color: $primary-color;
@@ -61,14 +63,15 @@
 }
 
 .copyright {
-  margin: 20px 0;
+  padding: 20px 0;
   text-align: center;
   color: $light-color;
+  border-top: 1px solid $light-color;
 
   &__link {
     font-weight: bold;
-    color: $light-color;
     transition: all .1s;
+    color: $light-color;
 
     &:hover {
       color: $primary-color;

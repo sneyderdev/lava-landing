@@ -1,4 +1,6 @@
 // Menu
+@use '../base' as *;
+
 .menu {
   display: flex;
   padding: 10px 0;

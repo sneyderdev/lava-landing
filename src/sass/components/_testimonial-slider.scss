@@ -1,4 +1,6 @@
 // Testimonial Slider
+@use '../base' as *;
+
 .testimonial-slider {
   display: flex;
   margin: 50px 0;

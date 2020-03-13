@@ -1,4 +1,6 @@
 // Reset
+@use '../base' as *;
+
 * {
   box-sizing: border-box;
 }
@@ -15,14 +17,14 @@ a {
 }
 
 input, textarea {
-  border: 1px solid lighten($dark-color, 70%);
   outline: 0;
-  resize: none;
+  border: 1px solid lighten($dark-color, 70%);
 }
 
 textarea {
   height: 150px;
   margin: 30px 0;
+  resize: none;
 }
 
 input[type="submit"] {
@@ -30,7 +32,9 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-hr {
-  width: 100%;
-  border: 1px solid $light-color;
+// Utilities
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
 }

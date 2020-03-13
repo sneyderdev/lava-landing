@@ -1,4 +1,9 @@
 // Main SCSS
-@import "base/base";
-@import "components/components";
-@import "layout/layout";
+// Base
+@use 'base/reset';
+
+// Components
+@use 'components';
+
+// Layout
+@use 'layout';

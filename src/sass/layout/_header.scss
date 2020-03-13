@@ -1,4 +1,6 @@
 // Header
+@use '../base' as *;
+
 .lava-header {
   height: 700px;
   @include set-background-image('banner-bg.png', right);
@@ -9,8 +11,8 @@
   }
 
   &__title {
-    @include set-font-title(3.8em);
     line-height: 1.3em;
+    @include set-font-title(3.8em);
 
     &--highlight {
       text-transform: uppercase;
@@ -31,10 +33,10 @@
   justify-content: space-between;
 
   &__logo {
-    font-family: $secondary-font;
     font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: .1em;
     font-weight: 900;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-family: $secondary-font;
   }
 }

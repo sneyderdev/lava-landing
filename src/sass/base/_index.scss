@@ -3,36 +3,29 @@
 $primary-color: #f2a33b;
 $secondary-color: #eb5669;
 $light-color: #fff;
-$dark-color: #222;
+$dark-color: #222 !default;
 $gradient-color: linear-gradient(145deg, $primary-color, $secondary-color);
 $primary-font: "Quicksand", sans-serif;
 $secondary-font: "Source Sans Pro", sans-serif;
 
 // Mixins
 @mixin set-background-image($image-name, $image-position, $size: contain) {
-  background-image: url("../../../assets/images/#{$image-name}");
   background-repeat: no-repeat;
-  background-position-x: $image-position;
+  background-image: url("../../../assets/images/#{$image-name}");
   background-size: $size;
+  @if ($image-position != null) {
+    background-position-x: $image-position;
+  }
 }
 
 @mixin set-font-title($size) {
+  font-weight: 900;
   font-family: $secondary-font;
   font-size: $size;
-  font-weight: 900;
 }
 
 @mixin set-font-description($weight, $text-color: lighten($dark-color, 30%)) {
-  font-weight: $weight;
   line-height: 1.7em;
+  font-weight: $weight;
   color: $text-color;
 }
-
-// Utilities
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 30px;
-}
-
-@import "reset";
