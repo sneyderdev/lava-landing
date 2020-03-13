@@ -9,11 +9,11 @@ $primary-font: "Quicksand", sans-serif;
 $secondary-font: "Source Sans Pro", sans-serif;
 
 // Mixins
-@mixin set-background-image($image-name, $image-position) {
+@mixin set-background-image($image-name, $image-position, $size: contain) {
   background-image: url("../../../assets/images/#{$image-name}");
   background-repeat: no-repeat;
   background-position-x: $image-position;
-  background-size: contain;
+  background-size: $size;
 }
 
 @mixin set-font-title($size) {

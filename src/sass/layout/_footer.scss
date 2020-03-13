@@ -1,0 +1,77 @@
+// Footer
+.lava-footer {
+  height: 900px;
+  margin-top: 150px;
+  @include set-background-image('footer-bg.png', center, 100% 100%);
+
+  .container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+  }
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  align-items: center;
+
+  &-form {
+    padding: 50px;
+    text-align: center;
+    background: $light-color;
+    box-shadow: 0 0 8px $dark-color;
+    border-radius: 5px;
+
+    &__field {
+      width: 100%;
+      padding: 15px 20px;
+      font-family: $primary-font;
+      border-radius: 10px;
+
+      &:focus {
+        border-color: $primary-color;
+      }
+    }
+  }
+
+  &-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+.lava-info {
+  color: $light-color;
+
+  &__title {
+    margin: 0 0 20px 0;
+    @include set-font-title(3em);
+
+    &--highlight {
+      color: $primary-color;
+    }
+  }
+
+  &__description {
+    @include set-font-description(500, $light-color);
+  }
+}
+
+.copyright {
+  margin: 20px 0;
+  text-align: center;
+  color: $light-color;
+
+  &__link {
+    font-weight: bold;
+    color: $light-color;
+    transition: all .1s;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}

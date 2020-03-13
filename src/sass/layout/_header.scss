@@ -18,8 +18,9 @@
     }
   }
 
-  &__text {
-    margin-bottom: 40px;
+  &__description {
+    margin-bottom: 30px;
+    @include set-font-description(500);
   }
 }
 

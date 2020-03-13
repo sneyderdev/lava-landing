@@ -1,0 +1,25 @@
+// Social
+.social {
+
+  &__link {
+    height: 45px;
+    width: 45px;
+    margin-left: 15px;
+    display: inline-block;
+    line-height: 45px;
+    text-align: center;
+    color: $light-color;
+    border: 1px solid $light-color;
+    border-radius: 50%;
+    transition: all .1s;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:hover {
+      background: $primary-color;
+      border-color: $primary-color;
+    }
+  }
+}
