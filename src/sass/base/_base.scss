@@ -1,5 +1,4 @@
 // Base
-
 // Variables
 $primary-color: #f2a33b;
 $secondary-color: #eb5669;
@@ -9,9 +8,29 @@ $gradient-color: linear-gradient(145deg, $primary-color, $secondary-color);
 $primary-font: "Quicksand", sans-serif;
 $secondary-font: "Source Sans Pro", sans-serif;
 
+// Mixins
+@mixin set-background-image($image-name, $image-position) {
+  background-image: url("../../../assets/images/#{$image-name}");
+  background-repeat: no-repeat;
+  background-position-x: $image-position;
+  background-size: contain;
+}
+
+@mixin set-font-title($size) {
+  font-family: $secondary-font;
+  font-size: $size;
+  font-weight: 900;
+}
+
+@mixin set-font-description($weight, $text-color: lighten($dark-color, 30%)) {
+  font-weight: $weight;
+  line-height: 1.7em;
+  color: $text-color;
+}
+
 // Utilities
 .container {
-  max-width: 1240px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 30px;
 }

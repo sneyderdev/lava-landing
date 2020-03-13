@@ -1,0 +1,61 @@
+// Main Section
+.features {
+  margin: 150px 0;
+}
+
+.about {
+  margin: 150px 0;
+  @include set-background-image('left-bg-decor.png', left);
+
+  .container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.list__item {
+  display: flex;
+  margin: 50px 0;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  &__content {
+    margin-left: 25px;
+  }
+
+  &__title {
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+  }
+
+  &__description {
+    margin-top: 0;
+    @include set-font-description(500);
+  }
+}
+
+.testimonials {
+  @include set-background-image('right-bg-decor.png', right);
+
+  &__title, &__description {
+    text-align: center;
+  }
+
+  &__title {
+    @include set-font-title(3em);
+
+    &--highlight {
+      color: $primary-color;
+    }
+  }
+
+  &__description {
+    width: 65%;
+    margin: 0 auto;
+    @include set-font-description(500);
+  }
+}

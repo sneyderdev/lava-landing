@@ -1,0 +1,82 @@
+// Testimonial Slider
+.testimonial-slider {
+  display: flex;
+  margin: 50px 0;
+  align-items: center;
+  justify-content: space-between;
+  color: $light-color;
+
+  &__controls {
+    height: 140px;
+    width: 140px;
+    position: relative;
+
+    .control {
+      height: 80px;
+      width: 80px;
+      line-height: 80px;
+      position: absolute;
+      text-align: center;
+      font-size: 1.7em;
+      background: $gradient-color;
+      border-radius: 10px;
+      cursor: pointer;
+
+      &:first-child {
+        top: 0;
+        left: 0;
+      }
+
+      &:last-child{
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+}
+
+.testimonial-cards {
+  width: 80%;
+  display: flex;
+}
+
+.testimonial-author {
+  margin-left: 30px;
+  padding: 70px 0 0 70px;
+  position: relative;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.testimonial-content {
+  padding: 45px 35px;
+  text-align: center;
+  background: $gradient-color;
+  border-radius: 5px;
+
+  &__rating {
+    font-size: .7em;
+  }
+
+  &__name {
+    font-size: 1.5em;
+  }
+
+  &__description {
+    margin-bottom: 24px;
+    font-style: italic;
+    @include set-font-description(400, $light-color);
+  }
+
+  &__profession {
+    font-size: .8em;
+  }
+}

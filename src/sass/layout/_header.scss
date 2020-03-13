@@ -1,25 +1,21 @@
 // Header
 .lava-header {
-  height: 900px;
-  background-image: url("../../../assets/images/banner-bg.png");
-  background-repeat: no-repeat;
-  background-position-x: right;
+  height: 700px;
+  @include set-background-image('banner-bg.png', right);
 
   &__content {
-    width: 38%;
-    margin-top: 180px;
+    width: 45%;
+    margin: 180px 0;
   }
 
   &__title {
-    font-family: $secondary-font;
-    font-size: 3.8em;
-    font-weight: 900;
+    @include set-font-title(3.8em);
     line-height: 1.3em;
-  }
 
-  &__title--highlight {
-    text-transform: uppercase;
-    color: $primary-color;
+    &--highlight {
+      text-transform: uppercase;
+      color: $primary-color;
+    }
   }
 
   &__text {

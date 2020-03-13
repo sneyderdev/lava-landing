@@ -13,4 +13,8 @@
   &:hover {
     background: $secondary-color;
   }
+
+  &--darken {
+    background: darken($primary-color, 10%);
+  }
 }
