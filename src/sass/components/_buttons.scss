@@ -1,0 +1,16 @@
+// Buttons
+.primary-button {
+  display: inline-block;
+  padding: 14px 23px;
+  font-size: .9em;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: $primary-color;
+  color: $light-color;
+  border-radius: 30px;
+  transition: all .2s;
+
+  &:hover {
+    background: $secondary-color;
+  }
+}

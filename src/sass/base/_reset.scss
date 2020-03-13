@@ -1,0 +1,15 @@
+// Reset
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $primary-font;
+  color: $dark-color;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-color;
+}

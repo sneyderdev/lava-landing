@@ -1,0 +1,43 @@
+// Header
+.lava-header {
+  height: 900px;
+  background-image: url("../../../assets/images/banner-bg.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+
+  &__content {
+    width: 38%;
+    margin-top: 180px;
+  }
+
+  &__title {
+    font-family: $secondary-font;
+    font-size: 3.8em;
+    font-weight: 900;
+    line-height: 1.3em;
+  }
+
+  &__title--highlight {
+    text-transform: uppercase;
+    color: $primary-color;
+  }
+
+  &__text {
+    margin-bottom: 40px;
+  }
+}
+
+.lava-menu {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    font-family: $secondary-font;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: 900;
+  }
+}

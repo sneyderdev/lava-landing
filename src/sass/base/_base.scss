@@ -1,1 +1,19 @@
 // Base
+
+// Variables
+$primary-color: #f2a33b;
+$secondary-color: #eb5669;
+$light-color: #fff;
+$dark-color: #222;
+$gradient-color: linear-gradient(145deg, $primary-color, $secondary-color);
+$primary-font: "Quicksand", sans-serif;
+$secondary-font: "Source Sans Pro", sans-serif;
+
+// Utilities
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+@import "reset";
