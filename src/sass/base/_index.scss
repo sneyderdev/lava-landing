@@ -11,7 +11,7 @@ $secondary-font: "Source Sans Pro", sans-serif;
 // Mixins
 @mixin set-background-image($image-name, $image-position, $size: contain) {
   background-repeat: no-repeat;
-  background-image: url("../../../assets/images/#{$image-name}");
+  background-image: url("../../assets/images/#{$image-name}");
   background-size: $size;
   @if ($image-position != null) {
     background-position-x: $image-position;
