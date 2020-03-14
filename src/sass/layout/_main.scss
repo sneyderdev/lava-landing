@@ -11,19 +11,15 @@
 
   .container {
     height: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    align-items: center;
-    justify-content: space-between;
+    @include set-grid(0, 2, 30);
+    @include set-alignment(center, space-between);
   }
 }
 
 .list__item {
   display: flex;
   margin: 50px 0;
-  align-items: flex-start;
-  justify-content: space-between;
+  @include set-alignment(flex-start, space-between);
 
   &__content {
     margin-left: 25px;

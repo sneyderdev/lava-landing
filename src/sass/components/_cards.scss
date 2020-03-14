@@ -2,26 +2,25 @@
 @use '../base' as *;
 
 .cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
   text-align: center;
+  @include set-grid(0, 3, 30);
 }
 
 .card {
   padding: 70px 30px;
   position: relative;
-  box-shadow: 0 0 5px lighten($dark-color, 70%);
   border-radius: 10px;
+  box-shadow: 0 0 5px lighten($dark-color, 70%);
 
   &__number {
     position: absolute;
     top: 0;
-    font-family: $secondary-font;
     font-size: 8em;
     font-weight: bold;
-    color: $secondary-color;
     opacity: .08;
+    user-select: none;
+    font-family: $secondary-font;
+    color: $secondary-color;
   }
 
   &__title {

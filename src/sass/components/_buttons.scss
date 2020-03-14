@@ -5,18 +5,19 @@
   display: inline-block;
   padding: 17px 23px;
   font-size: .9em;
-  text-transform: uppercase;
   font-weight: bold;
-  background: $primary-color;
-  color: $light-color;
+  text-transform: uppercase;
   border-radius: 30px;
   transition: all .2s;
+  background: $primary-color;
+  color: $light-color;
 
   &:hover {
     background: $secondary-color;
   }
 
   &--darken {
+    @extend .primary-button;
     background: darken($primary-color, 10%);
   }
 }

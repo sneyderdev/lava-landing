@@ -29,3 +29,20 @@ $secondary-font: "Source Sans Pro", sans-serif;
   font-weight: $weight;
   color: $text-color;
 }
+
+@mixin set-grid($r-amount, $c-amount, $gap) {
+  display: grid;
+  @if ($r-amount == 0) {
+    grid-template-columns: repeat($c-amount, 1fr);
+  } @else {
+    grid-template-rows: repeat($r-amount, 1fr);
+  }
+  @if ($gap != 0) {
+    gap: #{$gap}px;
+  }
+}
+
+@mixin set-alignment($v-align, $h-align) {
+  align-items: $v-align;
+  justify-content: $h-align;
+}

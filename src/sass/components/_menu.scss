@@ -13,10 +13,10 @@
 
   &__link {
     font-size: .9em;
-    text-transform: uppercase;
     font-weight: bold;
-    color: lighten($dark-color, 40%);
+    text-transform: uppercase;
     transition: all .1s;
+    color: lighten($dark-color, 40%);
 
     &:hover {
       color: $primary-color;

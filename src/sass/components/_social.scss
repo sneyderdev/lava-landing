@@ -10,10 +10,10 @@
     display: inline-block;
     line-height: 45px;
     text-align: center;
-    color: $light-color;
-    border: 1px solid $light-color;
     border-radius: 50%;
     transition: all .1s;
+    color: $light-color;
+    border: 1px solid $light-color;
 
     &:first-child {
       margin-left: 0;

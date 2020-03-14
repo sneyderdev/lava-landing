@@ -4,9 +4,8 @@
 .testimonial-slider {
   display: flex;
   margin: 50px 0;
-  align-items: center;
-  justify-content: space-between;
   color: $light-color;
+  @include set-alignment(center, space-between);
 
   &__controls {
     height: 140px;
@@ -20,9 +19,9 @@
       position: absolute;
       text-align: center;
       font-size: 1.7em;
-      background: $gradient-color;
       border-radius: 10px;
       cursor: pointer;
+      background: $gradient-color;
 
       &:first-child {
         top: 0;
@@ -61,8 +60,8 @@
 .testimonial-content {
   padding: 45px 35px;
   text-align: center;
-  background: $gradient-color;
   border-radius: 5px;
+  background: $gradient-color;
 
   &__rating {
     font-size: .7em;
