@@ -10,20 +10,15 @@
   @include set-background-image('left-bg-decor.png', left);
 
   .container {
-    height: 100%;
     @include set-grid(0, repeat(2, 1fr), 30);
     @include set-alignment(center, space-between);
   }
 }
 
 .list__item {
-  display: flex;
   margin: 50px 0;
+  @include set-grid(0, auto auto, 25);
   @include set-alignment(flex-start, space-between);
-
-  &__content {
-    margin-left: 25px;
-  }
 
   &__title {
     margin: 0 0 10px 0;
@@ -33,6 +28,14 @@
   &__description {
     margin-top: 0;
     @include set-font-description(500);
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 

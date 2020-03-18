@@ -75,6 +75,7 @@
   .about {
     .container {
       grid-template-columns: 1fr;
+      gap: 60px;
     }
 
     &__img {
@@ -103,8 +104,11 @@
 }
 
 @media screen and (max-width: 768px) {
-  .lava-header {
+  .lava-header, .cards, .about, .testimonials, .lava-footer {
     font-size: 15px;
+  }
+
+  .lava-header {
     background-size: contain;
 
     &__content {
@@ -114,12 +118,7 @@
     }
   }
 
-  .cards, .lava-footer {
-    font-size: 15px;
-  }
-
   .testimonials {
-    font-size: 15px;
 
     &__description {
       width: 100%;

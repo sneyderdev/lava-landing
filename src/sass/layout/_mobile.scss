@@ -1,0 +1,55 @@
+// Mobile
+@use '../base' as *;
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .lava-header, .cards, .about, .testimonials, .lava-footer {
+    font-size: 14px;
+  }
+
+  .features, .about, .testimonials {
+    margin: 100px 0;
+  }
+
+  .card {
+    padding: 50px 30px;
+
+    &__title {
+      margin: 20px 0;
+    }
+  }
+
+  .list__item {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    text-align: center;
+
+    &__img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    &__content {
+      margin: 20px 0 0;
+    }
+  }
+
+  .testimonial-author {
+    padding: 20px 0 0 20px;
+
+    &__img {
+      width: 80px;
+    }
+  }
+
+  .contact {
+    padding-top: 50px;
+
+    &-form {
+      padding: 30px;
+    }
+  }
+}
