@@ -2,9 +2,9 @@
 @use '../base' as *;
 
 .testimonial-slider {
-  display: flex;
   margin: 50px 0;
   color: $light-color;
+  @include set-grid(0, 1fr auto, 30);
   @include set-alignment(center, space-between);
 
   &__controls {
@@ -37,12 +37,12 @@
 }
 
 .testimonial-cards {
-  width: 80%;
-  display: flex;
+  overflow: auto;
+  @include set-grid(0, repeat(3, calc(50% - 15px)), 30);
 }
 
 .testimonial-author {
-  margin-left: 30px;
+  width: 100%;
   padding: 70px 0 0 70px;
   position: relative;
 

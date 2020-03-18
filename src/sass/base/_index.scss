@@ -1,12 +1,13 @@
 // Base
 // Variables
+$primary-font: "Quicksand", sans-serif;
+$secondary-font: "Source Sans Pro", sans-serif;
 $primary-color: #f2a33b;
 $secondary-color: #eb5669;
 $light-color: #fff;
-$dark-color: #222 !default;
+$dark-color: #222;
+$shadow-color: rgba(0, 0, 0, .3);
 $gradient-color: linear-gradient(145deg, $primary-color, $secondary-color);
-$primary-font: "Quicksand", sans-serif;
-$secondary-font: "Source Sans Pro", sans-serif;
 
 // Mixins
 @mixin set-background-image($image-name, $image-position, $size: contain) {
@@ -14,7 +15,7 @@ $secondary-font: "Source Sans Pro", sans-serif;
   background-image: url("../../assets/images/#{$image-name}");
   background-size: $size;
   @if ($image-position != null) {
-    background-position-x: $image-position;
+    background-position: $image-position;
   }
 }
 
@@ -30,12 +31,12 @@ $secondary-font: "Source Sans Pro", sans-serif;
   color: $text-color;
 }
 
-@mixin set-grid($r-amount, $c-amount, $gap) {
+@mixin set-grid($rows, $columns, $gap) {
   display: grid;
-  @if ($r-amount == 0) {
-    grid-template-columns: repeat($c-amount, 1fr);
+  @if ($rows == 0) {
+    grid-template-columns: $columns;
   } @else {
-    grid-template-rows: repeat($r-amount, 1fr);
+    grid-template-rows: $rows;
   }
   @if ($gap != 0) {
     gap: #{$gap}px;

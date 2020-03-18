@@ -3,11 +3,11 @@
 
 .lava-header {
   height: 700px;
-  @include set-background-image('banner-bg.png', right);
+  @include set-background-image('banner-bg.png', right top);
 
   &__content {
     width: 45%;
-    margin: 180px 0;
+    margin-top: 180px;
   }
 
   &__title {
@@ -27,8 +27,8 @@
 }
 
 .lava-menu {
-  width: 70%;
   display: flex;
+  width: 70%;
   @include set-alignment(center, space-between);
 
   &__logo {

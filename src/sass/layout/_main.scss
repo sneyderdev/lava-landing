@@ -11,7 +11,7 @@
 
   .container {
     height: 100%;
-    @include set-grid(0, 2, 30);
+    @include set-grid(0, repeat(2, 1fr), 30);
     @include set-alignment(center, space-between);
   }
 }
@@ -37,6 +37,7 @@
 }
 
 .testimonials {
+  margin: 130px 0;
   @include set-background-image('right-bg-decor.png', right);
 
   &__title, &__description {

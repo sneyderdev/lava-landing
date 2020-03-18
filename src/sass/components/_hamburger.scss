@@ -1,0 +1,25 @@
+// Hamburger Button
+@use '../base' as *;
+
+.burger {
+  display: none;
+  padding: 2px;
+  cursor: pointer;
+
+  &:hover {
+    top: 6.5px;
+  }
+
+  &:hover .burger__icon:nth-child(2) {
+    margin: 10px 7px;
+  }
+}
+
+.burger__icon {
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin: 7px;
+  transition: .2s;
+  background: $dark-color;
+}

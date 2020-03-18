@@ -7,12 +7,18 @@
     <title>Lava</title>
   </head>
   <body>
+    <div class="burger" id="burger-btn"> <!-- Burger Button  -->
+      <i class="burger__icon"></i>
+      <i class="burger__icon"></i>
+      <i class="burger__icon"></i>
+    </div>
+
     <!-- Header Start -->
     <header class="lava-header">
       <div class="container">
         <nav class="lava-menu">
           <a href="#" class="lava-menu__logo">Lava</a>
-          <ul class="menu">
+          <ul class="menu" id="menu">
             <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
             <li class="menu__item"><a href="#" class="menu__link">About</a></li>
             <li class="menu__item"><a href="#" class="menu__link">Testimonials</a></li>
@@ -127,6 +133,21 @@
                   <div class="testimonial-content__profession">Web Analyst</div>
                 </div>
               </div>
+              <div class="testimonial-author">
+                <img src="assets/images/testimonial-author-1.png" alt="" class="testimonial-author__img">
+                <div class="testimonial-content">
+                  <div class="testimonial-content__rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h3 class="testimonial-content__name">Elon Musk</h3>
+                  <div class="testimonial-content__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, provident?</div>
+                  <div class="testimonial-content__profession">Tesla CEO</div>
+                </div>
+              </div>
             </div>
             <div class="testimonial-slider__controls">
               <i class="fas fa-angle-left control"></i>
@@ -171,5 +192,8 @@
 
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/a42ccc6984.js" crossorigin="anonymous"></script>
+
+    <!-- JS -->
+    <script src="dist/js/main.js"></script>
   </body>
 </html>
